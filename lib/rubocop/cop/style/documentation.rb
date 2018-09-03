@@ -26,6 +26,7 @@ module RuboCop
       #
       class Documentation < Cop
         include DocumentationComment
+        include ConfigurableEnforcedStyle
 
         MSG = 'Missing top-level %<type>s documentation comment.'.freeze
 
